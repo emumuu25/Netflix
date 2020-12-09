@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap");
+:root {
+  --light: "Roboto", sans-serif;
+  --bold: "Poppins", sans-serif;
+  --button: rgb(218, 0, 0);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #000;
+}
+main {
+  min-height: 550px;
+  background: url("../image/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.432);
+  background-blend-mode: multiply;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.801) inset, 0 -50px 100px #000 inset;
+  border-bottom: 8px solid rgb(36, 36, 36);
+}
+main .container {
+  width: 90%;
+  margin: 0 auto;
+}
+main .container .header .logo {
+  width: 110px;
+}
+main .container .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.8em;
+  align-items: center;
+  height: 10vh;
+}
+main .container .header a {
+  padding: 0.3rem 0.6rem;
+  background-color: var(--button);
+  border-radius: 5px;
+  font-family: var(--light);
+  font-size: 0.9rem;
+}
+main .container .hero {
+  text-align: center;
+}
+main .container .hero h1 {
+  font-family: var(--light);
+  margin-top: 3em;
+  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+}
+main .container .hero .caption {
+  width: 75%;
+  margin: auto;
+  font-family: var(--light);
+  font-size: 1.1rem;
+}
+main .container .hero .caption h3 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin: 0.8em 0;
+}
+main .container .hero .contact {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+main .container .hero .contact input {
+  padding: 0.9rem 1rem;
+  outline: none;
+  color: rgb(99, 99, 99);
+  font-family: var(--light);
+  border-radius: 2px;
+  border: none;
+}
+main .container .hero .contact .fas {
+  margin-left: 0.3em;
+}
+main .container .hero .contact a {
+  padding: 0.6rem 0.8rem;
+  background-color: var(--button);
+  margin: 1em auto;
+  border-radius: 3px;
+  border: none;
+  font-family: var(--light);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+section .container {
+  width: 95%;
+  margin: auto;
+}
+section .box {
+  border-bottom: 7px solid rgb(32, 32, 32);
+  min-height: 480px;
+  text-align: center;
+}
+section .box h3 {
+  font-size: 1.6rem;
+  font-family: var(--light);
+  letter-spacing: 1px;
+  margin-top: 2em;
+}
+section .box p {
+  margin-top: 0.5em;
+  font-family: var(--light);
+  font-size: 1.2rem;
+}
+section .box img {
+  max-width: 400px;
+}
+.up {
+  margin-bottom: 3em;
+}
+article {
+  min-height: 600px;
+  border-bottom: 7px solid rgb(32, 32, 32);
+}
+article .container {
+  text-align: center;
+}
+article .container .question {
+  background-color: rgb(51, 51, 51);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: var(--light);
+  max-width: 700px;
+  margin: 0.6em auto;
+}
+article .container h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  font-size: 1.7rem;
+  font-family: var(--light);
+}
+article .container .contact-2 {
+  font-size: 1.2rem;
+  font-family: var(--light);
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 2em auto;
+}
+article .container .contact-2 p {
+  margin: auto;
+  margin-bottom: 1em;
+  width: 70%;
+}
+article .flex {
+  display: flex;
+  flex-direction: column;
+}
+article .container .contact-2 input {
+  color: rgb(51, 51, 51);
+  outline: none;
+  font-family: var(--light);
+  width: 90%;
+  margin: auto;
+  padding: 0.9rem 1rem;
+}
+article .container .contact-2 a {
+  padding: 0.6rem 0.8rem;
+  background-color: var(--button);
+  margin: 1em auto;
+  border-radius: 3px;
+  border: none;
+  font-family: var(--light);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+footer {
+  min-height: 400px;
+}
+footer .container {
+  width: 80%;
+  margin: 3em auto;
+}
+footer .container h5 {
+  font-size: 1rem;
+  font-family: var(--light);
+  color: rgb(131, 131, 131);
+}
+footer .container .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+footer .container .box {
+  margin: 1em;
+  font-family: var(--light);
+}
+footer .container .box p {
+  color: rgb(107, 107, 107);
+  line-height: 1.9em;
+}
+
+@media (min-width: 550px) {
+  main {
+    min-height: 700px;
+  }
+  main .container .header .logo {
+    width: 140px;
+  }
+  main .container .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0.8em;
+    align-items: center;
+    height: 10vh;
+  }
+  main .container .header a {
+    padding: 0.5rem 1.1rem;
+    background-color: var(--button);
+    border-radius: 5px;
+    font-family: var(--light);
+    font-size: 1rem;
+  }
+  main .container .hero h1 {
+    font-size: 3rem;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2.8em;
+  }
+  main .container .hero .caption {
+    width: 90%;
+  }
+  main .container .hero .caption h3 {
+    font-size: 1.6rem;
+    margin: 0.4em 0;
+  }
+  main .container .hero .caption p {
+    font-size: 1.1rem;
+  }
+  main .container .hero input {
+    width: 90%;
+    margin: auto;
+    height: 50px;
+  }
+  section .box p {
+    width: 80%;
+    margin: 0.5em auto;
+  }
+  article .container .question {
+    width: 75%;
+    padding: 1.4rem;
+  }
+  article .contact-2 {
+    width: 90%;
+  }
+  article .container .contact-2 a {
+    padding: 0.8rem;
+  }
+}
+
+@media (min-width: 700px) {
+  main .container .hero .contact {
+    width: 85%;
+    margin: 1em auto;
+  }
+  main .container .hero h1 {
+    font-size: 3.2rem;
+  }
+  main .container .hero .caption h3 {
+    font-size: 1.7rem;
+  }
+  main .container .hero .caption p {
+    font-size: 1.2rem;
+  }
+  main .container .hero .contact a {
+    padding: 1rem;
+  }
+  section .container .box .down {
+    margin-bottom: 3.5em;
+  }
+  section .container .box h3 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+  }
+  section .container .box p {
+    font-size: 1.4rem;
+    width: 75%;
+  }
+  .screen {
+    position: absolute;
+    top: 64px;
+    left: 150px;
+    width: 340px;
+  }
+}
+
+@media (min-width: 960px) {
+  main .container .hero h1 {
+    width: 60%;
+  }
+  main .container .hero .caption p {
+    font-size: 1.3rem;
+    margin-top: 1.2em;
+  }
+  main .container .hero .contact {
+    width: 85%;
+    flex-direction: row;
+  }
+  main .container .hero .contact input {
+    flex: 2;
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+  }
+  main .container .hero .contact a {
+    padding: 1.1rem 1rem;
+    width: 35%;
+    font-size: 1.5rem;
+    margin-left: 1px;
+  }
+  section .container {
+    width: 100%;
+  }
+  section .container .box {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section .container .box .up {
+    margin: 0;
+    width: 40%;
+  }
+  section .container .box .down {
+    margin: 0;
+    width: 40%;
+  }
+  section .container .box .up h3 {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+  section .container .box .up p {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    margin-top: 1em;
+  }
+  section .container .box .down img {
+    margin: 0;
+  }
+  article .container .contact-2 {
+    width: 100%;
+  }
+  article .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  article .container .contact-2 .flex input {
+    width: 75%;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  article .container .contact-2 .flex a {
+    width: 35%;
+    padding: 0.9rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    height: 100vh;
+  }
+  main .hero .contact {
+    max-width: 900px;
+  }
+}
